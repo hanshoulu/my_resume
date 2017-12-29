@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>简历</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/jj.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <script>
+    var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+    //devicePixelRatio设备的像素比；
+    
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+    var html=document.getElementsByTagName('html')[0];
+    var pageWidth=html.getBoundingClientRect().width;
+    html.style.fontSize=pageWidth/10+"px"; 
+  </script>
+  <!-- Demo styles -->
+</head>
+<body>
+  <!-- 音乐 -->
+    <span id="musicControl">  
+        <a id="mc_play" class="on" onclick="play_music();">  
+            <audio id="musicfx" loop="loop" autoplay="autoplay" control="control">  
+                <source src="ahch.mp3" type="audio/mpeg">  
+            </audio>  
+        </a>  
+   </span> 
+  <!-- Swiper -->
+  <img class="jt" src="imgs/jt.png">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide one">
+        <img class="cl" src="imgs/cl.jpg">
+        <img class="cl1" src="imgs/cl1.jpg">
+        <img class="ku" src="imgs/ku.gif">
+        <img class="pao" src="imgs/pao.png">
+        <img class="ea1" src="imgs/ea1.png">
+        <p class="ani text" swiper-animate-effect="zoomInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">个人简介</p>
+        <p class="ani name" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="1s">韩守炉</p>
+        <p class="ani name1" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="1s">应聘设计前端</p>
+        <img class="ani cl2"  src="imgs/cl.jpg"swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+      </div>
+      <div class="swiper-slide two">
+        <img class="ku" src="imgs/pic7.jpg">
+        <p class="ani skill" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay=".3s">基本资料</p>
+        <div class="ms"><img  src="imgs/ms.jpg"></div>
+        <p class="ani na" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0s">姓名：韩守炉</p>
+        <p class="zy ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay=".2s">专业：通信工程</p>
+        <p class="tel ani " swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.4s">电话：18356095535</p>
+        <p class="xl ani " swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.6s">学历：本科(工科学士)</p>
+        <p class="age ani " swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.8s">年龄：25</p>
+        <p class="email ani " swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">邮箱：1587577730@qq.com</p>
+      </div>
+      <div class="swiper-slide th">
+          <img class="ku" src="imgs/pic2.jpg">
+          <p class="skill1" >技能展示</p>
+          <div class="ps"><img  class="ani" src="imgs/psd.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration=".7s" swiper-animate-delay="0s"><div id="ps"></div></div>
+          <div class="hl"><img src="imgs/html.png" class="ani" src="imgs/psd.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration=".7s" swiper-animate-delay="0.2s"><div id="hl"></div></div>
+          <div class="css"><img src="imgs/css3.png" class="ani" src="imgs/psd.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration=".7s" swiper-animate-delay="0.4s"><div id="css"></div></div>
+          <div class="js"><img src="imgs/js.png" class="ani" src="imgs/psd.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration=".7s" swiper-animate-delay="0.6s"><div id="js"></div></div>
+          <div class="jq"><img src="imgs/jquery.png" class="ani" src="imgs/psd.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration=".7s" swiper-animate-delay="0.8s"><div id="jq"></div></div>
+      </div>
+      <div class="swiper-slide fo" >
+          <img class="ku" src="imgs/pic5.jpg">
+          <div class="back">></div>
+          <p class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay=".3">作品展示</p>
+          <div class="lun">
+            <img src="imgs/zp1.png" class="ani zp1" swiper-animate-effect="rollIn" swiper-animate-duration="1s" >
+            <img src="imgs/zp2.png" class="ani zp2" swiper-animate-effect="rollIn" swiper-animate-duration="1s" >
+            <img src="imgs/zp3.png" class="ani zp3" swiper-animate-effect="rollIn" swiper-animate-duration="1s" >
+          </div>
+      </div>
+      <div class="swiper-slide five" >
+          <img class="ku" src="imgs/pic8.jpg">
+          <div class="cont">
+            <img class="zw ani" src="imgs/zw.png" swiper-animate-effect="rotateIn" swiper-animate-duration=".7s" swiper-animate-delay="0s">
+            <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">稳重</div>
+            <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">帅气</div>
+            <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">幽默</div>
+            <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">乐观</div>
+            <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">上进</div>
+            <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">执着</div>
+            <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0s">善于<br>沟通</div>
+          </div>
+          <p class="ani skill" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay=".3s">自我评价</p>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <script src="js/swiper.animate.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      on:{
+      init: function(){
+        swiperAnimateCache(this); //隐藏动画元素 
+        swiperAnimate(this); //初始化完成开始动画
+      }, 
+      slideChangeTransitionEnd: function(){ 
+        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+      } 
+    }
+    });
+    //animate
+  //   var mySwiper = new Swiper ('.swiper-container', {
+  
+  // }) 
+  </script>
+  <script>
+    var i=0;
+    var oPs=document.getElementById('ps');
+    var oHl=document.getElementById('hl');
+    var oCss=document.getElementById('css');
+    var oJs=document.getElementById('js');
+    var oJq=document.getElementById('jq');
+    function ju(){
+      if(i<=75){
+        i++;
+        y=i+12;
+        m=i+10;
+        n=i+8;
+        j=i+6;
+        oPs.style.width=i*0.7+'vw';
+        oHl.style.width=i*0.89+'vw';
+        oCss.style.width=i*0.85+'vw';
+        oJq.style.width=i*0.8+'vw';
+        oJs.style.width=i*0.83+'vw';
+        oPs.innerHTML=i+'%';
+        oHl.innerHTML=y+'%';
+        oCss.innerHTML=m+'%';
+        oJs.innerHTML=n+'%';
+        oJq.innerHTML=j+'%';
+
+      }
+    }
+    setInterval(ju,50)
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('.back').hide();
+      $('.lun>img').click(function(){
+      $('.lun>img').not($(this)).hide();
+      $(this).css({
+        'width':'80vw',
+        'height':'80vh',
+        'left':'10%',
+        'top':'-14%'
+        })
+        $('.back').show()
+    })
+    $('.back').click(function(){
+      $('.lun>img').not($(this)).show();
+      $('.lun>img').css({
+        'width':'',
+        'height':'',
+        'left':'',
+        'top':''
+      }) 
+      $('.back').hide();
+    })
+    })
+   
+  </script>
+  <!-- 音乐 -->
+  <script
+ src="http://code.jquery.com/jquery-latest.js"></script>
+ <script>
+ 	  function play_music(){  
+        if ($('#mc_play').hasClass('on')){  
+            $('#mc_play audio').get(0).pause();  
+            $('#mc_play').attr('class','stop');  
+        }else{  
+            $('#mc_play audio').get(0).play();  
+            $('#mc_play').attr('class','on');  
+        }  
+        $('#music_play_filter').hide();  
+        event.stopPropagation(); //阻止冒泡  
+    }  
+    // function just_play(id){  
+    //     $('#mc_play audio').get(0).play();  
+    //     $('#mc_play').attr('class','on');  
+    //     if (typeof(id)!='undefined'){  
+    //         $('#music_play_filter').hide();  
+    //     }  
+    //     event.stopPropagation(); //阻止冒泡  
+    // }  
+    // function is_weixn(){  
+    //     return false;  
+    //     var ua = navigator.userAgent.toLowerCase();  
+    //     if(ua.match(/MicroMessenger/i)=="micromessenger") {  
+    //         return true;  
+    //     } else {  
+    //         return false;  
+    //     }  
+    // }  
+   	//  window.onload=function(){  
+    //     // if (!is_weixn()){  
+    //         // just_play();  
+    //     // }  
+    // }  
+ </script>
+</body>
+</html>
