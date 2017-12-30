@@ -411,6 +411,7 @@ body {
 }
 .cont > div:nth-child(8) {
   font-size: 0.53333333rem;
+  animation: roate linear 4s  infinite;
 }
 @-webkit-keyframes reverseRotataZ {
   0% {
